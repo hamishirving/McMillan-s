@@ -1,0 +1,15 @@
+.partners {
+	background: $color-light;
+	padding: 75px 0;
+	text-align: center;
+
+	.container {
+		display: flex;
+		align-items: center;
+
+		img {
+			@include span-columns(2);
+			vertical-align: middle;
+		}
+	}
+}

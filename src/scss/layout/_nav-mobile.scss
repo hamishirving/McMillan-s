@@ -29,8 +29,12 @@
 				}
 			}
 
-			.sub-menu {
-				border-bottom: none;
+			ul {
+
+				li {
+					border-bottom: none;
+					// padding-left: 0;
+				}
 			}
 		}
 	}

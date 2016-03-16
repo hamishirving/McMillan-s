@@ -1,7 +1,8 @@
 .footer {
 	@include clearfix;
 	padding: 75px 0;
-	background: $color-light;
+	color: $color-white;
+	background: $color-secondary;
 
 	.contact,.social {
 		
@@ -11,21 +12,27 @@
 
 		a {
 			text-decoration: none;
-			color: $color-secondary;
+			color: $color-white;
 		}
 	}
 
 	.contact {
 		@include span-columns(3);
-		@include shift(1);
 	}
 
-	.logos {
-		@include span-columns(5);
+	.motto {
+		@include span-columns(6);
+		text-align: center;
+
+		h3 {
+			margin-top: 10px;
+		}
 	}
 
 	.social {
 		@include span-columns(2);
+		@include shift(1);
+		@include omega;
 		
 		.icon-fb {
 
@@ -40,6 +47,17 @@
 				background-size: 100%;
 				float: left;
 			}
+		}
+	}
+
+	.copyright {
+		@include span-columns(12);
+		margin-top: 2%;
+		text-align: center;
+		
+		p {
+			text-transform: uppercase;	
+			font-size: em(14);
 		}
 	}
 }
