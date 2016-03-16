@@ -1,0 +1,56 @@
+// Menu button animation
+
+.top-animate {
+  top: 13px !important;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mid-animate {
+  opacity: 0;
+}
+
+.bottom-animate {
+  top: 13px !important;
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+.top-menu {
+  top: 5px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+}
+
+.mid-menu {
+  top: 13px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+}
+
+.bottom-menu {
+  top: 21px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10px;
+}
+
+.menui {
+  background: $color-primary;
+  transition: 0.3s ease;
+  transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+  margin-top: 2px;
+  position: absolute;
+}
+
+.hamburger {
+  z-index: 999;
+  position: relative;
+  display: block;
+  padding: 3px;
+  height: 32px;
+  width: 32px;
+  margin: 0px;
+}

@@ -1,0 +1,16 @@
+.quote {
+	@include clearfix;
+	padding: 60px 0;
+	text-align: center;
+	background: $color-white;
+
+	h3 {
+		@include span-columns(10);
+		@include shift(1);
+		padding: 0 5%;
+
+		span {
+			font-weight: $font-bold;
+		}
+	}
+}

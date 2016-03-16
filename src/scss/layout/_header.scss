@@ -1,0 +1,27 @@
+.header {
+	height: 500px;
+	background: $color-primary;
+	margin-top: 60px;
+	text-align: center;
+	color: $color-white;
+	position: relative;
+
+	.swiper-slide {
+		height: 500px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-family: $font-secondary;
+		position: absolute;
+		width: 100%;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -100%);
+  		z-index: 10;
+  	}
+}

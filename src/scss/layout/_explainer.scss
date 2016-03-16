@@ -1,0 +1,29 @@
+.explainer {
+	@include clearfix;
+	background: $color-white;
+	
+	.explainer-text {
+		@include span-columns(7);
+		padding-left: 7.5%; 
+		padding-right: 5%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		span {
+			font-weight: $font-bold;
+		}
+	}
+
+	.logos {
+		@include span-columns(5);
+		background: $color-secondary;
+		text-align: center;
+		padding: 60px 5%;
+
+		img {
+			display: inline-block;
+			margin: 10% 5%;
+			vertical-align: middle;	
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.bottom {
+	background: $color-secondary;
+	color: $color-white;
+	padding: 5px 0;
+	text-align: center;
+
+	.copyright {
+		font-size: em(14);
+		font-weight: $font-bold;
+		text-transform: uppercase;
+	}
+}
