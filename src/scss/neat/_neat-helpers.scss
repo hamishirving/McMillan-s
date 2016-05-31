@@ -6,3 +6,12 @@
 @import "settings/grid";
 @import "settings/visual-grid";
 @import "settings/disable-warnings";
+
+// ------------------------------------------------------------
+// Omega Reset
+// ------------------------------------------------------------
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: 2.35765%; }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

@@ -1,0 +1,15 @@
+<section class="header">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+  	<perch:repeater id="HeaderBgImages" label="Background Slider Images">
+        <div class="swiper-slide" style="background: linear-gradient(to right, rgba(29,79,195,.8) 0%, rgba(29,79,195,.8) 100%), url(<perch:content id="headerBgImage" type="image" label="Image" />); background-size: cover; background-position: center center">
+        </div>
+    </perch:repeater>
+
+    </div>
+  </div>
+  <div class="container">
+    <h1><perch:content id="headerHeading" type="text" label="Header Text" /></h1>
+  </div>  
+</section>

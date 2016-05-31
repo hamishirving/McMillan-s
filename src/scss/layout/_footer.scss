@@ -1,8 +1,13 @@
 .footer {
 	@include clearfix;
-	padding: 75px 0;
+	padding-top: 75px;
+	padding-bottom: 40px;
 	color: $color-white;
 	background: $color-secondary;
+
+	@include media($tablet) {
+		text-align: center;
+	}
 
 	.contact,.social {
 		
@@ -18,13 +23,30 @@
 
 	.contact {
 		@include span-columns(3);
+
+		@include media($tablet) {
+			@include span-columns(12);
+			@include omega;
+			margin-bottom: 20px;
+		}
 	}
 
 	.motto {
 		@include span-columns(6);
 		text-align: center;
+		padding: 0 3%;
 
-		h3 {
+		@include media($tablet) {
+			@include span-columns(12);
+			@include omega;
+			padding: 0 3%;
+			margin-bottom: 20px;
+		}
+
+		h4 {
+			font-family: $font-secondary;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
 			margin-top: 10px;
 		}
 	}
@@ -33,6 +55,19 @@
 		@include span-columns(2);
 		@include shift(1);
 		@include omega;
+
+		@include media($tablet) {
+			@include span-columns(12);
+			@include shift(0);
+			@include omega;
+		}
+
+		p {
+			@include media($tablet) {
+				width: 100px;
+				margin: 0 auto;
+			}
+		}
 		
 		.icon-fb {
 
@@ -52,7 +87,6 @@
 
 	.copyright {
 		@include span-columns(12);
-		margin-top: 2%;
 		text-align: center;
 		
 		p {

@@ -2,6 +2,8 @@
 # https://HosseinKarami.github.io/fastshell
 # @author Hossein Karami
 
+## Perch
+app/perch/core
 
 ## Node.js
 lib-cov

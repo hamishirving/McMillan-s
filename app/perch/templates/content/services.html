@@ -1,0 +1,21 @@
+<perch:before>
+<section class="services">
+</perch:before>
+
+  <div class="service" style="background: url(<perch:content id="serviceBgImage" type="image" label="Background Image" />); background-size: cover; background-position: center center">
+    <div class="service-info <perch:if exists="serviceClass"><perch:content id="serviceClass" type="select" options="left, light, left light" label="Style" allowempty="true" help="Dont change (blank is ok)" /></perch:if>">
+      <h5><perch:content id="serviceHeading" type="text" label="Heading" title="true" /></h5>
+      <ul>
+        <perch:repeater id="servicesList" label="Service List">
+          <li><perch:content id="service" type="text" label="Service" /></li>
+        </perch:repeater>
+      </ul>
+      <perch:if exists="serviceLink">
+        <a href="<perch:content id="serviceLink" type="text" label="Page link" urlify="true" help="Ony add link on Home Page" />">Find out more</a>
+      </perch:if>
+    </div>
+  </div>
+
+<perch:after>
+</section>
+</perch:after>

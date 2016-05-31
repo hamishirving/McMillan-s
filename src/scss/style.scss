@@ -4,10 +4,13 @@
 @import 'vendor/slideout';
 @import 'vendor/dropit';
 @import 'vendor/smart-menu';
+@import 'vendor/swipebox';
+@import 'vendor/slick';
 
 // Bourbon
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import 'refills/refills';
 
 // Helpers
 @import "helpers/variables";
@@ -20,6 +23,7 @@
 // Components
 @import 'components/links';
 @import 'components/hamburger';
+@import 'components/buttons';
 
 // Layouts
 @import 'layout/nav';
@@ -30,4 +34,10 @@
 @import 'layout/quote';
 @import 'layout/footer';
 @import 'layout/partners';
+@import 'layout/two-thirds';
+@import 'layout/products';
+@import 'layout/enquiry';
+@import 'layout/servicing';
+@import 'layout/contact';
+@import 'layout/downloads';
 

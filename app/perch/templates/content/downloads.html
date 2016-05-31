@@ -1,0 +1,13 @@
+<section class="downloads">
+	<div class="container">
+		<h2>Downloads</h2>
+		<perch:repeater id="downloads" label="Downloads" max="2">
+			<div class="download">
+				<a href="<perch:content id="downloadDoc" type="file" label="Document" />" target="_blank">
+					<img src="<perch:content id="downloadIcon" type="image" label="Icon" />" height="60px">
+					<perch:content id="downloadText" type="text" label="Text" />
+				</a>
+			</div>
+		</perch:repeater>
+	</div>
+</section>

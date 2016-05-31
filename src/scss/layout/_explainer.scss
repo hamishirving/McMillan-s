@@ -1,35 +1,63 @@
 .explainer {
 	@include clearfix;
 	background: $color-light;
-	
-	.explainer-text {
-		@include span-columns(7);
-		padding-left: 7.5%; 
-		padding-right: 5%;
-		padding-top: 50px;
-		padding-bottom: 50px;
+	width: 100%;
+	height: 100%;
+	position: relative;
 
-		span {
-			font-weight: $font-bold;
-		}
-	}
-
-	.logos {
+	.explainer-wrap {
 		@include clearfix;
-		@include span-columns(5);
-		background: $color-secondary;
-		text-align: center;
-		padding: 60px 5%;
-		height: 100%;
+		max-width: em(1080);
+		margin: 0 auto;
 
-		img {
-			display: inline-block;
-			margin: 10% 5%;
-			vertical-align: middle;
+		.explainer-text {
+			float: left;
+			width: 40%;
+			padding-left: 0; 
+			padding-right: 7%;
+			padding-top: 50px;
+			padding-bottom: 50px;
 
-			&.block {
-				// display: block;
-				// width: 100%;
+			span {
+				font-weight: $font-bold;
+			}
+
+			@include media($teneighty) {
+				@include clearfix;
+				height: 100%;
+				width: 100%;
+				text-align: center;
+				padding-left: 5%;
+				padding-top: 10%;
+				padding-bottom: 10%;
+			}
+		}
+
+		.facebook {
+			position: absolute;
+			width: 60%;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: $color-secondary;
+			text-align: center;
+			padding: 80px 0;
+			height: 100%;
+
+			@include media($teneighty) {
+				position: relative;
+				width: 100%;
+				float: left;
+				padding: 40px 0;
+			}
+
+			@include media($mobile) {
+				display: none;
+			}
+
+			iframe {
+				width: 500px !important;
+				height: 650px !important;
 			}
 		}
 	}

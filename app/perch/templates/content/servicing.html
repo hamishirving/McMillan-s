@@ -1,0 +1,21 @@
+<perch:before>
+<section class="servicing">
+	<div class="container">
+</perch:before>
+
+		<div class="servicing-service">
+			<div class="servicing-image" style="background: url(<perch:content id="servicingImage" type="image" label="Image" />); background-size: cover; background-position: center center;"></div>
+			<div class="servicing-copy">
+				<h3><perch:content id="servicingHeading" type="text" label="Service heading" title="true" /></h3>
+				<ul>
+				<perch:repeater id="servicingServices" label="Services List">
+					<li><perch:content id="servicingService" type='text' label="Service" /></li>
+				</perch:repeater>
+				</ul>
+			</div>
+		</div>
+
+<perch:after>
+	</div>
+</section>
+</perch:after>

@@ -1,0 +1,40 @@
+<perch:before>
+<section class="products">
+	<div class="container">
+</perch:before>
+		<div class="product">
+			<div class="product-image" style="background: linear-gradient(to right, rgba(29,79,195,.6) 0%, rgba(29,79,195,.6) 100%), url(<perch:content id="productHeaderImage" type="image" label="Background Image" />); background-size: cover; background-position: center center">
+				<h3><perch:content id="productHeading" type="text" label="Product Heading" title="true" /></h3>
+				<perch:content id="productSold" type="checkbox" label="Sold" value="Sold" suppress="true" />
+				<perch:if exists="productSold">
+					<div class="sold">
+						<h3>Sold</h3>
+							<p>More of this model available on request</p>
+					</div>
+				</perch:if>
+			</div>
+			<div class="thumbs">
+				<perch:repeater id="productThumbs" label="Product Images">
+				<a rel="gallery<perch:content id="perch_item_index" type="hidden" />" href="<perch:content id="productImage" type="image" label="Image" />" class="swipebox">
+					<img src="<perch:content id="productImage" type="image" label="Image" />">
+				</a>
+				</perch:repeater>
+			</div>
+			<div class="product-table">
+				<table class="tables">
+				  <tbody>
+				  <perch:repeater id="productDetails" label="Product Details Table">
+				    <tr>
+				      <td><perch:content id="productDetailHeading" type="text" label="Heading" /></td>
+				      <td><perch:content id="productDetailText" type="text" label="Text" /></td>
+				    </tr>
+			    </perch:repeater>
+				  </tbody>
+				</table>
+			</div>
+			<a href="mailto:info@mcmillansengineering.co.uk?subject=Sales enquiry for <perch:content id="productHeading" type="hidden" />" class="btn btn-block">Make an enquiry</a>
+		</div>
+<perch:after>
+	</div>
+</section>
+</perch:after>

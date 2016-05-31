@@ -5,6 +5,11 @@
 		width: 50%;
 		float: left;
 		background: grey;
+		min-height: 300px;
+
+		@include media($teneighty) {
+			width: 100%;
+		}
 
 		.service-info {
 			background: rgba(31,41,67,0.9);
@@ -12,18 +17,57 @@
 			width: 50%;
 			padding: 10% 7.5%;
 			float: right;
+			min-height: 300px;
+
+			position: relative;
+
+			@include media($mobile) {
+				width: 100%;
+				margin-top: 300px;
+				padding: 20% 10%;
+			}
 
 			&.left {
 				float: left;
+
+				@include media($teneighty) {
+					background: rgba(29,79,195,0.9);
+				}
 			}
 
 			&.light {
 				background: rgba(29,79,195,0.9);
+
+				@include media($teneighty) {
+					float: left;
+				}
+			}
+
+			&.left.light {
+				@include media($teneighty) {
+					float: right;
+					background: rgba(31,41,67,0.9);
+				}		
 			}
 
 			h5 {
 				text-transform: uppercase;
-				// margin: 10px 0;
+			}
+
+			a {
+				color: $color-white;
+
+				@include media($mobile) {
+					float: right;
+				}
+
+				&:after {
+					content: "\203A";
+					height: 15px;
+					width: 15px;
+					margin-left: 7px;
+					position: absolute;
+				}
 			}
 		}
 	}

@@ -44,10 +44,6 @@
 				border-top: 4px solid $color-primary;
 			}
 
-			&.current {
-				border-top: 4px solid $color-primary;
-			}
-
 			a {
 				color: $color-primary;
 				position: relative;
@@ -65,8 +61,17 @@
 		float: right;
 		margin-top: 14px;
 		// Only show toggle button on tablet and below
-		@include media(min-width 1080px) {
+		@include media(min-width 1081px) {
 			display: none;
+		}
+
+		span {
+			float: left;
+			display: inline-block;
+			margin-right: 10px;
+			margin-top: 5px;
+			color: $color-primary;
+			font-weight: $font-bold;
 		}
 	}
 

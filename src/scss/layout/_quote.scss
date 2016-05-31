@@ -1,13 +1,15 @@
 .quote {
 	@include clearfix;
-	padding: 60px 0;
+	padding: 40px 0;
 	text-align: center;
 	background: $color-white;
 
+	@include media($tablet) {
+		padding: 5% 0;
+	}
+
 	h3 {
-		@include span-columns(10);
-		@include shift(1);
-		padding: 0 5%;
+		@include span-columns(12);
 
 		span {
 			font-weight: $font-bold;

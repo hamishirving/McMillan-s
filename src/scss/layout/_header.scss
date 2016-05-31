@@ -1,5 +1,5 @@
 .header {
-	height: 400px;
+	// height: 400px;
 	background: $color-primary;
 	margin-top: 60px;
 	text-align: center;
@@ -8,6 +8,10 @@
 
 	.swiper-slide {
 		height: 400px;
+
+		@include media($tablet) {
+			height: 300px;
+		}
 
 		img {
 			height: 100%;

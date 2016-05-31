@@ -1,15 +1,15 @@
 .partners {
-	background: $color-light;
+	background: $color-white;
 	padding: 75px 0;
 	text-align: center;
 
-	.container {
-		display: flex;
-		align-items: center;
+	@include media($tablet) {
+		padding: 10% 0;
+	}
 
-		img {
-			@include span-columns(2);
-			vertical-align: middle;
-		}
+	.slick-slide  {
+		vertical-align: middle;
+		height: 60px;
+		margin: 0 20px;
 	}
 }

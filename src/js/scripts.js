@@ -2,17 +2,9 @@
 $( document ).ready(function() {
 	'use strict';
 
-    // ----
-    // Show Current Page in Nav
-    // ----
-
-    $(function(){
-      $('.nav ul li').each(function() {
-        if ($(this).prop('href') == window.location.href) {
-          $(this).addClass('current');
-        }
-      });
-    });
+	$('html.js').velocity({
+		opacity: 1
+		}, 100, "easeInSine");
 
 	// ----
 	// Mobile Navigation - Slideout.js
@@ -53,7 +45,46 @@ $( document ).ready(function() {
 		autoplay: 3000,
 		effect: 'fade',
 		loop: true
-	});        
+	});
+
+    // ----
+    // Logo Carousel - slick
+    // ----
+	$('.logo-carousel').slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 0,
+		infinite: true,
+		speed: 2000,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+			}	
+		}
+		]
+	});
+
+	// ----
+	// Swipebox gallery
+	// ----
+
+	// For each gallery, add rel=gallery(n) to link and increment by 1
+	var gallery = $('.product > .thumbs');
+	gallery.each(function(n) {
+		$(this).children('a').attr('rel', 'gallery' + n++);
+	})
 
 // End DOM Ready
 });

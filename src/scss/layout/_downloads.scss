@@ -1,0 +1,23 @@
+.downloads {
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background: $color-light;
+	text-align: center;
+	
+	.container {
+
+		.download {
+			@include span-columns(6);
+			text-align: center;
+			padding: 5%;
+			background: $color-white;
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
